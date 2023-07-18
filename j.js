@@ -46,6 +46,11 @@ function vinteTres(rodadas, joao, maria, banca) {
     let cartaMinima = Math.min(pontuacaoParaJoaoPerder, pontuacaoParaMariaGanhar)
     while (cartasQueNaoTemMais[cartaMinima] >= 4) {
         cartaMinima++
+        if (!cartasQueNaoTemMais[cartaMinima]) {
+            cartasQueNaoTemMais[cartaMinima] = 1
+        } else {
+            cartasQueNaoTemMais[cartaMinima]++
+        }
     }
 
     return cartaMinima 

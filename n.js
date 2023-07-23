@@ -48,12 +48,14 @@ function cartas(quantidadeDeCartas, numerosDeCima, numerosDeBaixo, pegadas, vira
     }
 
     let result = parcial + valorCartaVirada
+    console.log("esquerdo", totalLeft)
 
     return result
 
-    // [] comparar qual é maior, result, totaLeft ou totalRight
-    // se o result nao for o maior
-    //  comparar os ultimos valores de cada lado (indexAt(-1))
+    //  [] fazer brute force para cada elemento da lista
+    //      so cogitar essa ideia se eu tiver uma maneira de nao ter espaco extra pada cada possibilidade
+    //  brute force do primeiro valor do lado esquerdo com os restantes do lado direito
+    //  dpos adiciona o valor esquerdo com o de cima dele e faz o loop no direito menos 1
 }
 
 function somarValorDasCartas(array) {
